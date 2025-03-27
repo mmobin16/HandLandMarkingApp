@@ -1,0 +1,38 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme -->
+    <style name="AppTheme" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color -->
+        <item name="colorPrimary">@color/signspeak_primary</item>
+        <item name="colorPrimaryVariant">@color/signspeak_primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+
+        <!-- Secondary brand color -->
+        <item name="colorSecondary">@color/signspeak_secondary</item>
+        <item name="colorSecondaryVariant">@color/signspeak_secondary</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+
+        <!-- Status bar color -->
+        <item name="android:statusBarColor">@color/signspeak_primary_dark</item>
+
+        <!-- Customize your theme here -->
+        <item name="android:windowLightStatusBar" tools:targetApi="m">false</item>
+    </style>
+
+    <style name="AppThemeProgressStyle" parent="Widget.AppCompat.ProgressBar">
+    <item name="android:layout_width">wrap_content</item>
+    <item name="android:layout_height">wrap_content</item>
+</style>
+
+<style name="IconButton" parent="Widget.MaterialComponents.Button.TextButton">
+    <item name="android:minWidth">48dp</item>
+    <item name="android:minHeight">48dp</item>
+    <item name="android:padding">0dp</item>
+    <item name="android:textSize">24sp</item>
+</style>
+
+<style name="BottomSheetSpinnerItemStyle" parent="Widget.AppCompat.TextView.SpinnerItem">
+    <item name="android:textColor">@color/bottom_sheet_text_color</item>
+    <item name="android:textSize">16sp</item>
+    <item name="android:padding">8dp</item>
+</style>
+</resources>

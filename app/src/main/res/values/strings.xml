@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">SignSpeak</string>
+    <string name="media_pipe">Powered by MediaPipe</string>
+
+    <!-- Accessibility labels -->
+    <string name="alt_bottom_sheet_chevron">Expand settings panel</string>
+    <string name="alt_bottom_sheet_max_results_button_minus">Decrease maximum hands</string>
+    <string name="alt_bottom_sheet_max_results_button_plus">Increase maximum hands</string>
+    <string name="alt_bottom_sheet_threshold_button_minus">Decrease confidence threshold</string>
+    <string name="alt_bottom_sheet_threshold_button_plus">Increase confidence threshold</string>
+
+    <!-- Navigation menu -->
+    <string name="menu_camera">Live Translation</string>
+    <string name="menu_gallery">Practice Mode</string>
+    <string name="menu_phrasebook">Phrasebook</string>
+    <string name="menu_settings">Settings</string>
+
+    <!-- Placeholder text -->
+    <string name="tv_gallery_placeholder">Select an image or video to practice sign language recognition</string>
+
+    <!-- Performance metrics -->
+    <string name="label_inference_time">Processing Time</string>
+    <string name="label_fps">Detection Rate</string>
+
+    <!-- Confidence thresholds -->
+    <string name="label_hand_detection_confidence_threshold">Detection Sensitivity</string>
+    <string name="label_hand_tracking_confidence_threshold">Tracking Sensitivity</string>
+    <string name="label_hand_presence_confidence_threshold">Presence Sensitivity</string>
+
+    <!-- Hand settings -->
+    <string name="label_num_hands">Maximum Hands</string>
+    <string name="label_delegate">Processing Mode</string>
+    <string name="label_hand_results">Sign Detected</string>
+
+    <!-- Delegate options -->
+
+
+    <!-- Instruction messages -->
+    <string name="instruction_show_hand">Show your hand in the frame</string>
+    <string name="instruction_multiple_hands">Show one hand at a time for best results</string>
+    <string name="instruction_no_hands">No hands detected</string>
+    <string name="instruction_low_confidence">Move hand closer to camera</string>
+
+    <!-- Button labels -->
+    <string name="btn_capture">Capture Sign</string>
+    <string name="btn_toggle_camera">Switch Camera</string>
+    <string name="btn_toggle_flash">Toggle Flash</string>
+    <string name="btn_save_settings">Save Settings</string>
+    <string name="btn_reset_defaults">Reset to Defaults</string>
+
+    <!-- Feedback messages -->
+    <string name="feedback_sign_detected">Sign detected: %1$s</string>
+    <string name="feedback_processing">Processing sign\u2026</string>
+    <string name="feedback_saved">Settings saved</string>
+
+    <!-- Error messages -->
+    <string name="error_no_gpu">GPU acceleration not available</string>
+    <string name="error_camera">Camera unavailable</string>
+    <string name="error_model">Sign recognition model failed to load</string>
+
+    <!-- Accessibility content descriptions -->
+    <string name="desc_camera_button">Capture current sign</string>
+    <string name="desc_settings_button">Open settings</string>
+    <string name="desc_flash_button">Toggle camera flash</string>
+    <string name="desc_delegate_switch">Toggle GPU acceleration</string>
+
+    <string name="camera_button_desc">Capture sign</string>
+    <string name="settings_button_desc">Open settings</string>
+    <string name="flash_button_desc">Toggle flash</string>
+    <string name="processing_settings">Processing Settings</string>
+    <string name="use_gpu_acceleration">Use GPU Acceleration</string>
+    <string name="max_hands_label">Maximum Hands</string>
+    <string name="confidence_settings">Confidence Thresholds</string>
+    <string name="detection_confidence_label">Detection Confidence</string>
+    <string name="tracking_confidence_label">Tracking Confidence</string>
+    <string name="presence_confidence_label">Presence Confidence</string>
+    <string name="save_settings">Save Settings</string>
+    <string name="title_camera">Camera</string>
+    <string name="title_phrasebook">Phrasebook</string>
+    <string name="title_settings">Settings</string>
+    <string-array name="delegate_spinner_titles">
+        <item>CPU</item>
+        <item>GPU</item>
+    </string-array>
+
+</resources>
