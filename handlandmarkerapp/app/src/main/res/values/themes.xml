@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="Theme.HandLandmarker" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/signspeak_primary</item>
+        <item name="colorPrimaryVariant">@color/signspeak_primary_dark</item>
+        <item name="colorOnPrimary">@android:color/white</item>
+        
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/signspeak_secondary</item>
+        <item name="colorSecondaryVariant">@color/signspeak_secondary_variant</item>
+        <item name="colorOnSecondary">@android:color/black</item>
+        
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/signspeak_primary_dark</item>
+        
+        <!-- Background colors -->
+        <item name="android:colorBackground">@color/signspeak_background</item>
+        <item name="colorSurface">@color/signspeak_surface</item>
+        
+        <!-- Text colors -->
+        <item name="android:textColorPrimary">@color/signspeak_text_primary</item>
+        <item name="android:textColorSecondary">@color/signspeak_text_secondary</item>
+        
+        <!-- Error colors -->
+        <item name="colorError">@color/signspeak_error</item>
+        <item name="colorOnError">@android:color/white</item>
+        
+        <!-- Custom styles -->
+        <item name="materialButtonStyle">@style/Widget.HandLandmarker.Button</item>
+        <item name="bottomSheetDialogTheme">@style/ThemeOverlay.HandLandmarker.BottomSheetDialog</item>
+    </style>
+
+    <style name="Widget.HandLandmarker.Button" parent="Widget.MaterialComponents.Button">
+        <item name="android:textAllCaps">false</item>
+        <item name="android:letterSpacing">0.05</item>
+        <item name="cornerRadius">8dp</item>
+        <item name="android:padding">12dp</item>
+    </style>
+
+    <style name="ThemeOverlay.HandLandmarker.BottomSheetDialog" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/Widget.HandLandmarker.BottomSheet</item>
+        <item name="android:windowIsFloating">false</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+    </style>
+
+    <style name="Widget.HandLandmarker.BottomSheet" parent="Widget.MaterialComponents.BottomSheet">
+        <item name="android:background">@drawable/bottom_sheet_background</item>
+        <item name="behavior_peekHeight">64dp</item>
+        <item name="android:paddingTop">16dp</item>
+        <item name="android:paddingBottom">16dp</item>
+    </style>
+</resources> 

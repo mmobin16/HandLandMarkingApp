@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bottom_sheet_background"
+    android:elevation="8dp">
+
+    <!-- Header with Toggle -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:gravity="center_vertical"
+        android:background="@color/signspeak_primary">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Hand Detection Settings"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:textColor="@android:color/white"/>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/toggleSettings"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Hide"
+            style="@style/Widget.MaterialComponents.Button.TextButton"
+            android:textColor="@android:color/white"
+            app:icon="@drawable/ic_expand_less"
+            app:iconTint="@android:color/white"/>
+    </LinearLayout>
+
+    <!-- Settings Content -->
+    <LinearLayout
+        android:id="@+id/settingsContent"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Max Hands Control -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_marginBottom="16dp"
+            android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Maximum Hands"
+                android:textSize="16sp"
+                android:textColor="@color/signspeak_text_primary"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/maxHandsMinus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="-"
+                style="@style/Widget.HandLandmarker.Button"
+                app:cornerRadius="24dp"/>
+
+            <TextView
+                android:id="@+id/maxHandsValue"
+                android:layout_width="48dp"
+                android:layout_height="wrap_content"
+                android:text="1"
+                android:gravity="center"
+                android:textSize="16sp"
+                android:textColor="@color/signspeak_text_primary"
+                android:layout_marginHorizontal="8dp"/>
+
+            <com.google.android.material.button.MaterialButton
+                android:id="@+id/maxHandsPlus"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:text="+"
+                style="@style/Widget.HandLandmarker.Button"
+                app:cornerRadius="24dp"/>
+        </LinearLayout>
+
+        <!-- Confidence Threshold Controls -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Confidence Thresholds"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="@color/signspeak_text_primary"
+            android:layout_marginBottom="16dp"/>
+
+        <!-- Detection Confidence -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Detection Confidence"
+                android:textSize="14sp"
+                android:textColor="@color/signspeak_text_secondary"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/detectionConfidenceSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0.0"
+                android:valueTo="1.0"
+                android:stepSize="0.1"
+                app:thumbColor="@color/signspeak_primary"
+                app:trackColor="@color/signspeak_primary_light"
+                app:trackTint="@color/signspeak_primary"/>
+
+            <TextView
+                android:id="@+id/detectionConfidenceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="0.5"
+                android:textSize="12sp"
+                android:textColor="@color/signspeak_text_secondary"/>
+        </LinearLayout>
+
+        <!-- Tracking Confidence -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Tracking Confidence"
+                android:textSize="14sp"
+                android:textColor="@color/signspeak_text_secondary"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/trackingConfidenceSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0.0"
+                android:valueTo="1.0"
+                android:stepSize="0.1"
+                app:thumbColor="@color/signspeak_primary"
+                app:trackColor="@color/signspeak_primary_light"
+                app:trackTint="@color/signspeak_primary"/>
+
+            <TextView
+                android:id="@+id/trackingConfidenceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="0.5"
+                android:textSize="12sp"
+                android:textColor="@color/signspeak_text_secondary"/>
+        </LinearLayout>
+
+        <!-- Presence Confidence -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginBottom="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Presence Confidence"
+                android:textSize="14sp"
+                android:textColor="@color/signspeak_text_secondary"
+                android:layout_marginBottom="8dp"/>
+
+            <com.google.android.material.slider.Slider
+                android:id="@+id/presenceConfidenceSlider"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:valueFrom="0.0"
+                android:valueTo="1.0"
+                android:stepSize="0.1"
+                app:thumbColor="@color/signspeak_primary"
+                app:trackColor="@color/signspeak_primary_light"
+                app:trackTint="@color/signspeak_primary"/>
+
+            <TextView
+                android:id="@+id/presenceConfidenceValue"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="end"
+                android:text="0.5"
+                android:textSize="12sp"
+                android:textColor="@color/signspeak_text_secondary"/>
+        </LinearLayout>
+
+        <!-- Delegate Selection -->
+        <Spinner
+            android:id="@+id/spinnerDelegate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:entries="@array/delegate_spinner_titles"/>
+
+        <!-- Inference Time -->
+        <TextView
+            android:id="@+id/inferenceTimeVal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Inference time: 0ms"
+            android:layout_marginTop="8dp"
+            android:textSize="14sp"/>
+    </LinearLayout>
+</LinearLayout>

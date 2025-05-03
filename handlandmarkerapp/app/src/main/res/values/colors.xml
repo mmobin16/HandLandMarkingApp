@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Primary Colors -->
+    <color name="signspeak_primary">#134f5c</color>
+    <color name="signspeak_primary_dark">#134f5c</color>
+    <color name="signspeak_primary_light">#257587</color>
+    
+    <!-- Secondary Colors -->
+    <color name="signspeak_secondary">#FF4081</color>
+    <color name="signspeak_secondary_variant">#F50057</color>
+    
+    <!-- Background Colors -->
+    <color name="signspeak_background">#121212</color>
+    <color name="signspeak_surface">#1E1E1E</color>
+    
+    <!-- Text Colors -->
+    <color name="signspeak_text_primary">#FFFFFF</color>
+    <color name="signspeak_text_secondary">#B3FFFFFF</color>
+    
+    <!-- Status Colors -->
+    <color name="signspeak_error">#B00020</color>
+    <color name="signspeak_success">#4CAF50</color>
+    
+    <!-- Bottom Sheet Colors -->
+    <color name="bottom_sheet_background">#FFFFFF</color>
+    <color name="bottom_sheet_text_color">#FFFFFF</color>
+    
+    <!-- Overlay Colors -->
+    <color name="overlay_background">#80000000</color>
+    <color name="overlay_text">#FFFFFF</color>
+    
+    <!-- MediaPipe Colors (for compatibility) -->
+    <color name="mp_color_primary">@color/signspeak_primary</color>
+    <color name="mp_color_primary_variant">@color/signspeak_primary_dark</color>
+    <color name="mp_color_primary_dark">@color/signspeak_primary_dark</color>
+    <color name="mp_color_secondary">@color/signspeak_secondary</color>
+    <color name="mp_color_secondary_variant">@color/signspeak_secondary_variant</color>
+    <color name="mp_color_error">@color/signspeak_error</color>
+    
+    <!-- Navigation Item Colors -->
+    <color name="signspeak_nav_item_color">#FFFFFF</color>
+</resources>
